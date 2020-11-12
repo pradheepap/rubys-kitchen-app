@@ -22,3 +22,9 @@ package-lock.json
 
 # Coveralls
 coverage
+
+# package directories
+jspm_packages
+
+# Serverless directories
+.serverless
