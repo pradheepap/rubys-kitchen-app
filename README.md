@@ -1,6 +1,6 @@
 ##  Generate App using Express Application Generator
 
-mkdir health-express-app
+mkdir rubys-kitchen-app
 $ npx express-generator
 
 ### Following files and folders are created. 
