@@ -26,7 +26,7 @@ create : public/
      $ npm install
 
    run the app:
-     $ DEBUG=health-express-app:* npm start
+     $ DEBUG=rubys-kitchen-app:* npm start
 
 Create a folder named app inside public directory.
 
@@ -36,7 +36,7 @@ I used victory template (https://www.free-css.com/assets/files/free-css-template
 Copy the template files inside the app directory.
 Now we need to configure the request to be redirected to the static html templates.
 
-Navigate to app.js and remove the dependencies for the router.
+Navigate to app.js and add the dependencies for the router.
 
 Re-route the path '/' to the static html path
 app.use(express.static(path.join(__dirname, 'public', 'app'))); // Configure the static path
@@ -48,4 +48,4 @@ install dependencies:
      $ npm install
 
 run the app:
-    $ DEBUG=auth0-projects:* npm start
+    $ DEBUG=rubys-kitchen-app:* npm start
