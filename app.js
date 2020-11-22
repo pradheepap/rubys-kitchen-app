@@ -1,4 +1,4 @@
-const serverless = require('serverless-http');
+// const serverless = require('serverless-http');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var blogRouter = require('./routes/blog');
 var contactRouter = require('./routes/contact');
 var menuRouter = require('./routes/menu');
+var loginRouter = require('./routes/login');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/menu.html', menuRouter);
 app.use('/blog.html', blogRouter);
 app.use('/contact.html', contactRouter);
+app.use('/login.html', loginRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -44,6 +46,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports.handler = serverless(app);
+// module.exports.handler = serverless(app);
 
-// module.exports = app;
+module.exports = app;

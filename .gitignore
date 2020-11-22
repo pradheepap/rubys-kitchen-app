@@ -28,3 +28,6 @@ jspm_packages
 
 # Serverless directories
 .serverless
+
+# VS Code Workspace
+*.code-workspace
